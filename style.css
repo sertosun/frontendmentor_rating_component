@@ -1,0 +1,159 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+}
+
+
+:root{
+--White: hsl(0, 0%, 100%)
+--Light Grey: hsl(217, 12%, 63%)
+--Medium Grey: hsl(216, 12%, 54%)
+--Dark Blue: hsl(213, 19%, 18%)
+--Very Dark Blue: hsl(216, 12%, 8%)
+--Orange: hsl(25, 97%, 53%)
+}
+
+button {
+    border: none;
+    background-color:  hsl(25, 97%, 53%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:  hsl(0, 0%, 100%) ;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+button:hover{
+    color:  hsl(25, 97%, 53%)  ;
+    background-color:  hsl(0, 0%, 100%) ;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+   
+  } 
+
+  .card{
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      background-color: hsl(213, 19%, 18%);
+      border-radius: 15px;
+      padding: 1.5em;
+     
+  }
+
+
+
+  .star img{
+    background-color: hsl(211, 20%, 22%);
+    padding: 15px;   
+    border-radius: 50%;     
+ }
+
+ .title{
+     margin-bottom: .7em;
+ }
+
+ .text{
+     color: hsl(216, 12%, 54%);
+ }
+
+
+
+  .numbers{
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+      text-align: center;
+      justify-content: space-between;
+     
+  }
+
+  .number{
+      width:30px;
+      height: 30px;         
+      border-radius: 100%;      
+      background-color: hsl(211, 20%, 22%);
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 22px;
+      color: hsl(217, 12%, 63%); 
+      cursor: pointer;   
+  }
+
+  .number:hover{
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%) ;
+   
+  }
+
+  .number:focus{
+      background-color: hsl(217, 12%, 63%) ;
+      color:  hsl(0, 0%, 100%) ;
+  }
+ 
+
+.thankyou{
+    width: 400px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+   gap: 1.7em;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 15px;
+    padding: 1.5em;
+   align-items: center;
+   display: none;
+}
+
+.thankyou_image{
+    width: max-content;
+    display: block;    
+}
+
+.thankyou_rating{
+    background-color: hsla(216, 12%, 54%, 0.3);
+    width: max-content;
+   
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+    font-weight: 400;
+    
+}
+
+.thankyou_head{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+   margin-top: 1em;
+    
+    font-size: 1.5em;
+}
+
+.thankyou_message{
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    
+}
